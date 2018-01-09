@@ -11,15 +11,19 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js', './assets/css/master.css'],
   output: {
     path: path.resolve('dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
       {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/},
-      {test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/}
+      {test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/},
+      {
+        test: /\.css$/,
+        loaders: ["style-loader","css-loader"]
+      }
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
