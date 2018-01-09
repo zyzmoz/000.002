@@ -1,0 +1,26 @@
+.menu{
+  width: 250px;
+  min-width: 250px;
+  padding: 8px;
+  float: left;
+  height: 98vh;
+  background-color: #fefefe;
+  border-right: 1px solid #d6d6d6;
+}
+
+.menu-header {
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+}
+
+.menu-content {
+
+}
+
+.menu-group {
+
+}
+
+.menu-item {
+
+}

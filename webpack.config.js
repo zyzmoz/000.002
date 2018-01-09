@@ -11,7 +11,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: ['./src/index.js', './assets/css/master.css'],
+  entry: ['./src/index.js', './src/assets/css/foundation.css'],
   output: {
     path: path.resolve('dist'),
     filename: 'bundle.js',
