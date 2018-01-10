@@ -1,16 +1,18 @@
-import './assets/css/foundation.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 //Import Pages
 import MainPage from './pages/MainPage';
-import Menu from './components/Menu';
+import MenuComponent from './components/Menu';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import Foundation from 'react-foundation';
+
+import './assets/css/foundation.css';
 
 
 ReactDOM.render(
   <BrowserRouter>
     <div className="grid-container">
-      <Menu />
+      <MenuComponent />
       <Route exact path="/" component={MainPage} />
     </div>
   </BrowserRouter>,
