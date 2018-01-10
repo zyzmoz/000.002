@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import Foundation, { Menu, MenuItem, Alignments} from 'react-foundation';
+import Foundation, { Menu, MenuItem, Alignments, ButtonGroup, Link as ButtonLink} from 'react-foundation';
 
 class MenuComponent extends Component {
   render(){
     return(
-      <div className="menu-item-alignment-example">
-      <Menu className="no-bullet" alignment={Alignments.RIGHT}>
-      <MenuItem><a>One</a></MenuItem>
-      <MenuItem><a>Two</a></MenuItem>
-      <MenuItem><a>Three</a></MenuItem>
-      <MenuItem><a>Four</a></MenuItem>
-    </Menu>
+      <div className="menu">
+      <div className="menu-header">
+        <h4>Menu</h4>
+      </div>
+      <ButtonGroup>
+        <ButtonLink isExpanded>One</ButtonLink>
+        <ButtonLink isExpanded>Two</ButtonLink>
+
+      </ButtonGroup>
       </div>
     )
   }
